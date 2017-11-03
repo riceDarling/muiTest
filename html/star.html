@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+	</head>
+
+	<body id="star">
+		<!--下拉刷新容器-->
+		<div id="refreshContainer" class="mui-content mui-scroll-wrapper">
+			<div class="mui-scroll">
+				<ul class="mui-table-view">
+				    <li class="mui-table-view-cell mui-media" v-for="{{item in items}}" v-on:tap="{{list($index)}}">
+				        <a data-href="{{item.href}}">
+				            <img class="mui-media-object mui-pull-left" v-bind:src="{{item.src}}">
+				            <div class="mui-media-body">
+				                {{item.title}}
+				                <p class="mui-ellipsis">{{item.descrition}}</p>
+				            </div>
+				        </a>
+				    </li>
+				</ul>
+			</div>
+		</div>
+
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/vue.js" ></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	</body>
+
+</html>

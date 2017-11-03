@@ -1,0 +1,9 @@
+.mui-bg{
+	background: #5c9932;
+}
+.mui-bar .mui-title,.mui-bar a {
+	color: #fff !important;
+}
+.mui-grid-view.mui-grid-9 .mui-media .mui-icon img{
+	height: 36px;
+}
